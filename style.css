@@ -1,0 +1,1365 @@
+/* ==========================================
+   STRAWBERRY MATCHA
+   BOLD VERSION 🍓🍵
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+
+    /* STRAWBERRY */
+    --strawberry: #e83f68;
+    --hot-pink: #f05278;
+    --dark-strawberry: #a92e4d;
+    --light-strawberry: #ffe3e9;
+
+    /* MATCHA */
+    --matcha: #638c55;
+    --dark-matcha: #315638;
+    --bright-matcha: #8caf6f;
+    --light-matcha: #e5efdc;
+
+    /* NEUTRALS */
+    --cream: #fff7e9;
+    --dark-brown: #382b27;
+    --brown: #634a42;
+    --white: #ffffff;
+
+}
+
+body {
+
+    font-family: "DM Sans", sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(232, 63, 104, 0.12),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 70%,
+            rgba(99, 140, 85, 0.15),
+            transparent 25%
+        ),
+        var(--cream);
+
+    color: var(--dark-brown);
+
+    min-height: 100vh;
+
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+
+/* ==========================================
+   DECORATIVE BLOBS
+========================================== */
+
+.blob {
+
+    position: fixed;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    z-index: -2;
+
+    filter: blur(2px);
+
+}
+
+.blob-one {
+
+    background: var(--light-strawberry);
+
+    top: -100px;
+    right: -70px;
+
+}
+
+.blob-two {
+
+    background: var(--light-matcha);
+
+    bottom: -100px;
+    left: -70px;
+
+}
+
+
+/* ==========================================
+   FLOATING DECORATIONS
+========================================== */
+
+.decoration {
+
+    position: fixed;
+
+    font-size: 35px;
+
+    opacity: 0.65;
+
+    z-index: -1;
+
+    animation: float 4s ease-in-out infinite;
+
+}
+
+.deco-strawberry {
+
+    top: 20%;
+    left: 3%;
+
+}
+
+.deco-matcha {
+
+    right: 3%;
+    top: 60%;
+
+}
+
+.deco-flower {
+
+    left: 7%;
+    bottom: 15%;
+
+    color: var(--strawberry);
+
+    font-size: 30px;
+
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(5deg);
+    }
+
+}
+
+
+/* ==========================================
+   WEBSITE CONTAINER
+========================================== */
+
+.website {
+
+    max-width: 1100px;
+
+    margin: 35px auto;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    border: 3px solid var(--dark-matcha);
+
+    border-radius: 35px;
+
+    overflow: hidden;
+
+    box-shadow:
+        12px 12px 0 var(--dark-matcha),
+        0 25px 60px rgba(50, 70, 45, 0.15);
+
+}
+
+
+/* ==========================================
+   TOP BAR
+========================================== */
+
+.topbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 22px 30px;
+
+    background: var(--white);
+
+    border-bottom: 3px solid var(--dark-matcha);
+
+}
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+.brand-icon {
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: var(--strawberry);
+
+    border-radius: 15px;
+
+    font-size: 25px;
+
+    transform: rotate(-5deg);
+
+}
+
+.brand h1 {
+
+    font-family: "Playfair Display", serif;
+
+    color: var(--dark-matcha);
+
+    font-size: 22px;
+
+}
+
+.brand span {
+
+    color: var(--strawberry);
+
+    font-size: 11px;
+
+}
+
+.status {
+
+    background: var(--light-matcha);
+
+    color: var(--dark-matcha);
+
+    padding: 8px 14px;
+
+    border-radius: 50px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+.status-dot {
+
+    display: inline-block;
+
+    width: 8px;
+    height: 8px;
+
+    background: #54a65d;
+
+    border-radius: 50%;
+
+    margin-right: 5px;
+
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+
+    min-height: 550px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 80px 70px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--light-strawberry) 0%,
+            var(--cream) 50%,
+            var(--light-matcha) 100%
+        );
+
+}
+
+.hero-content {
+
+    max-width: 550px;
+
+}
+
+.eyebrow {
+
+    display: inline-block;
+
+    background: var(--dark-matcha);
+
+    color: white;
+
+    padding: 7px 13px;
+
+    border-radius: 50px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+
+}
+
+.hero h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(55px, 7vw, 80px);
+
+    line-height: 0.98;
+
+    color: var(--dark-matcha);
+
+}
+
+.hero h2 span {
+
+    color: var(--strawberry);
+
+}
+
+.hero p {
+
+    max-width: 480px;
+
+    margin: 25px 0;
+
+    color: var(--brown);
+
+    font-size: 16px;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+.hero-buttons button {
+
+    border: none;
+
+    background: var(--strawberry);
+
+    color: white;
+
+    padding: 14px 22px;
+
+    border-radius: 12px;
+
+    font-family: inherit;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 5px 5px 0 var(--dark-strawberry);
+
+    transition: 0.2s ease;
+
+}
+
+.hero-buttons button:hover {
+
+    transform: translate(3px, 3px);
+
+    box-shadow: 2px 2px 0 var(--dark-strawberry);
+
+}
+
+.hero-buttons .outline-button {
+
+    background: var(--dark-matcha);
+
+    box-shadow: 5px 5px 0 #203b26;
+
+}
+
+
+/* ==========================================
+   PROFILE CARD
+========================================== */
+
+.profile-card {
+
+    position: relative;
+
+    background: white;
+
+    padding: 15px;
+
+    width: 280px;
+
+    transform: rotate(4deg);
+
+    box-shadow: 12px 12px 0 var(--strawberry);
+
+    border: 3px solid var(--dark-matcha);
+
+}
+
+.tape {
+
+    position: absolute;
+
+    top: -22px;
+    left: 95px;
+
+    width: 80px;
+
+    padding: 7px;
+
+    text-align: center;
+
+    background: var(--bright-matcha);
+
+    color: white;
+
+    transform: rotate(-3deg);
+
+}
+
+.profile-photo {
+
+    height: 340px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--strawberry),
+            var(--bright-matcha)
+        );
+
+    color: white;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+
+}
+
+.profile-caption {
+
+    padding: 12px 5px 5px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.profile-caption strong {
+
+    color: var(--dark-matcha);
+
+    font-family: "Playfair Display", serif;
+
+}
+
+.profile-caption span {
+
+    font-size: 10px;
+
+    color: var(--strawberry);
+
+}
+
+
+/* ==========================================
+   MENU
+========================================== */
+
+.menu {
+
+    padding: 65px 70px;
+
+    background: var(--white);
+
+}
+
+.menu-label {
+
+    text-align: center;
+
+    color: var(--dark-matcha);
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 11px;
+
+    margin-bottom: 25px;
+
+}
+
+.menu-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+.menu-card {
+
+    border: 3px solid var(--dark-matcha);
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    transition: 0.25s ease;
+
+    min-height: 150px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+.menu-card:hover {
+
+    transform: translateY(-7px) rotate(-1deg);
+
+    box-shadow: 7px 7px 0 var(--dark-matcha);
+
+}
+
+.menu-card.pink {
+
+    background: var(--strawberry);
+
+    color: white;
+
+}
+
+.menu-card.green {
+
+    background: var(--matcha);
+
+    color: white;
+
+}
+
+.menu-card.cream {
+
+    background: var(--cream);
+
+    color: var(--dark-brown);
+
+}
+
+.menu-icon {
+
+    font-size: 32px;
+
+}
+
+.menu-card strong {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+
+}
+
+.menu-card small {
+
+    opacity: 0.8;
+
+    font-size: 11px;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+
+    background: var(--dark-matcha);
+
+    color: white;
+
+    padding: 25px 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 11px;
+
+}
+
+
+/* ==========================================
+   POPUP OVERLAY
+========================================== */
+
+.popup-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(38, 50, 35, 0.7);
+
+    backdrop-filter: blur(7px);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.25s ease;
+
+    z-index: 5000;
+
+}
+
+.popup-overlay.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+/* ==========================================
+   POPUP WINDOW
+========================================== */
+
+.popup-window {
+
+    width: min(850px, 100%);
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    background: var(--cream);
+
+    border: 4px solid var(--dark-matcha);
+
+    border-radius: 25px;
+
+    box-shadow:
+        12px 12px 0 var(--strawberry),
+        0 30px 80px rgba(0, 0, 0, 0.3);
+
+    transform: scale(0.8) translateY(30px);
+
+    transition: 0.3s cubic-bezier(.2,.8,.2,1);
+
+}
+
+.popup-overlay.active .popup-window {
+
+    transform: scale(1) translateY(0);
+
+}
+
+
+/* ==========================================
+   POPUP HEADER
+========================================== */
+
+.popup-header {
+
+    padding: 18px 22px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: white;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 5;
+
+}
+
+.pink-header {
+
+    background: var(--strawberry);
+
+}
+
+.green-header {
+
+    background: var(--dark-matcha);
+
+}
+
+.cream-header {
+
+    background: var(--cream);
+
+    color: var(--dark-matcha);
+
+    border-bottom: 3px solid var(--dark-matcha);
+
+}
+
+.popup-header button {
+
+    width: 35px;
+    height: 35px;
+
+    border: 2px solid currentColor;
+
+    background: transparent;
+
+    color: inherit;
+
+    border-radius: 50%;
+
+    font-size: 23px;
+
+    line-height: 20px;
+
+    cursor: pointer;
+
+}
+
+.popup-header button:hover {
+
+    background: rgba(255, 255, 255, 0.2);
+
+}
+
+
+/* ==========================================
+   POPUP CONTENT
+========================================== */
+
+.popup-content {
+
+    padding: 35px;
+
+}
+
+.popup-eyebrow {
+
+    color: var(--strawberry);
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+.popup-content h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+
+    color: var(--dark-matcha);
+
+    margin: 5px 0 15px;
+
+}
+
+.popup-content p {
+
+    color: var(--brown);
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ==========================================
+   ABOUT POPUP
+========================================== */
+
+.about-popup {
+
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    gap: 35px;
+
+    align-items: center;
+
+}
+
+.popup-photo {
+
+    height: 280px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--strawberry),
+            var(--matcha)
+        );
+
+    border: 4px solid white;
+
+    outline: 3px solid var(--dark-matcha);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+
+}
+
+.fact-row {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+}
+
+.fact-row span {
+
+    background: var(--light-matcha);
+
+    color: var(--dark-matcha);
+
+    padding: 8px 12px;
+
+    border-radius: 50px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+
+/* ==========================================
+   HOBBIES
+========================================== */
+
+.hobby-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+.hobby-item {
+
+    padding: 25px;
+
+    background: white;
+
+    border: 2px solid var(--dark-matcha);
+
+    border-radius: 18px;
+
+    transition: 0.2s ease;
+
+}
+
+.hobby-item:hover {
+
+    transform: translateY(-4px);
+
+    background: var(--light-matcha);
+
+}
+
+.hobby-item > span {
+
+    font-size: 35px;
+
+}
+
+.hobby-item h3 {
+
+    color: var(--dark-matcha);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 23px;
+
+    margin: 8px 0;
+
+}
+
+.hobby-item p {
+
+    font-size: 13px;
+
+}
+
+
+/* ==========================================
+   FAVORITES
+========================================== */
+
+.favorite-section {
+
+    margin-bottom: 25px;
+
+}
+
+.favorite-section h3 {
+
+    font-family: "Playfair Display", serif;
+
+    color: var(--dark-matcha);
+
+    margin-bottom: 10px;
+
+}
+
+.tag-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+.tag-container span {
+
+    background: var(--strawberry);
+
+    color: white;
+
+    padding: 9px 14px;
+
+    border-radius: 50px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+/* ==========================================
+   SKILLS
+========================================== */
+
+.skill {
+
+    margin-bottom: 22px;
+
+}
+
+.skill > div:first-child {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 7px;
+
+}
+
+.skill strong {
+
+    color: var(--dark-matcha);
+
+}
+
+.skill > div:first-child span {
+
+    color: var(--strawberry);
+
+    font-weight: bold;
+
+}
+
+.skill-bar {
+
+    height: 13px;
+
+    background: #d7dfd1;
+
+    border-radius: 50px;
+
+    overflow: hidden;
+
+}
+
+.skill-bar div {
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--strawberry),
+            var(--matcha)
+        );
+
+    border-radius: 50px;
+
+    animation: grow 1s ease;
+
+}
+
+@keyframes grow {
+
+    from {
+        width: 0 !important;
+    }
+
+}
+
+
+/* ==========================================
+   ALBUM
+========================================== */
+
+.album-popup {
+
+    width: min(950px, 100%);
+
+}
+
+.album-intro {
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: var(--dark-matcha);
+
+}
+
+.album-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+.album-photo {
+
+    position: relative;
+
+    aspect-ratio: 1;
+
+    overflow: hidden;
+
+    border: 3px solid white;
+
+    outline: 2px solid var(--dark-matcha);
+
+    border-radius: 12px;
+
+    background: var(--light-matcha);
+
+}
+
+.album-photo img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s ease;
+
+}
+
+.album-photo:hover img {
+
+    transform: scale(1.1);
+
+}
+
+.album-photo span {
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 25px 10px 10px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.7)
+        );
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+
+/* ==========================================
+   TESTIMONIALS
+========================================== */
+
+.testimonial {
+
+    background: white;
+
+    padding: 20px;
+
+    border-left: 6px solid var(--strawberry);
+
+    margin-bottom: 15px;
+
+}
+
+.quote {
+
+    font-family: Georgia, serif;
+
+    font-size: 45px;
+
+    color: var(--strawberry);
+
+    line-height: 0;
+
+}
+
+.testimonial p {
+
+    font-style: italic;
+
+    margin: 10px 0;
+
+}
+
+.testimonial strong {
+
+    color: var(--dark-matcha);
+
+    font-size: 12px;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 800px) {
+
+    .website {
+
+        margin: 15px;
+
+        box-shadow: 7px 7px 0 var(--dark-matcha);
+
+    }
+
+    .hero {
+
+        padding: 60px 35px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .hero p {
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+    .profile-card {
+
+        width: 250px;
+
+    }
+
+    .menu {
+
+        padding: 50px 30px;
+
+    }
+
+    .menu-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .about-popup {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .popup-photo {
+
+        height: 220px;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .topbar {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        align-items: flex-start;
+
+    }
+
+    .hero h2 {
+
+        font-size: 55px;
+
+    }
+
+    .menu-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .hobby-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .album-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+
+    }
+
+}
