@@ -1,326 +1,384 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
-<title>Reham's World 🍓</title>
+    <title>Reham's World 🍓</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
 
-<link rel="stylesheet" href="style.css">
-```
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-```
-<!-- CUSTOM CURSOR -->
-<div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
-<div class="cursor-glow"></div>
+    <!-- FLOATING DECORATIONS -->
+    <div class="floating strawberry">🍓</div>
+    <div class="floating flower">✿</div>
+    <div class="floating heart">♡</div>
+    <div class="floating star">✦</div>
 
-<!-- MOUSE TRAIL -->
-<div class="mouse-trail-container"></div>
+    <div class="website">
 
-<!-- FLOATING DECORATIONS -->
-<div class="floating strawberry">🍓</div>
-<div class="floating flower">✿</div>
-<div class="floating heart">♡</div>
-<div class="floating star">✦</div>
+        <!-- =========================
+             HEADER
+        ========================== -->
 
-<div class="website">
+        <header class="topbar">
 
-    <!-- =========================
-         HEADER
-    ========================== -->
-
-    <header class="topbar">
-
-        <button class="brand" onclick="goHome()">
-            🍓 <span>Reham</span>
-        </button>
-
-        <nav class="main-nav">
-
-            <button onclick="goHome()">home</button>
-
-            <button onclick="openPopup('aboutPopup')">
-                about me
+            <button class="brand" onclick="goHome()">
+                🍓 <span>Reham</span>
             </button>
 
-            <button onclick="openPopup('hobbiesPopup')">
-                hobbies
+            <nav class="main-nav">
+
+                <button onclick="goHome()">home</button>
+
+                <button onclick="openPopup('aboutPopup')">
+                    about me
+                </button>
+
+                <button onclick="openPopup('hobbiesPopup')">
+                    hobbies
+                </button>
+
+                <button onclick="openPopup('favoritesPopup')">
+                    favorites
+                </button>
+
+                <button onclick="openPopup('skillsPopup')">
+                    skills
+                </button>
+
+                <button onclick="openPopup('albumPopup')">
+                    album
+                </button>
+
+                <button onclick="openPopup('testimonialsPopup')">
+                    testimonials
+                </button>
+
+            </nav>
+
+            <button
+                class="menu-heart"
+                onclick="openPopup('aboutPopup')"
+                aria-label="Open about me"
+            >
+                ♡
             </button>
 
-            <button onclick="openPopup('favoritesPopup')">
-                favorites
-            </button>
-
-            <button onclick="openPopup('skillsPopup')">
-                skills
-            </button>
-
-            <button onclick="openPopup('albumPopup')">
-                album
-            </button>
-
-            <button onclick="openPopup('testimonialsPopup')">
-                testimonials
-            </button>
-
-        </nav>
-
-        <button class="menu-heart" onclick="openPopup('aboutPopup')">
-            ♡
-        </button>
-
-    </header>
+        </header>
 
 
-    <!-- =========================
-         MAIN CONTENT
-    ========================== -->
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
 
-    <main class="main-content">
+        <main class="main-content">
 
-        <!-- HERO -->
+            <!-- HERO -->
 
-        <section class="hero">
+            <section class="hero">
 
-            <div class="hero-text">
+                <div class="hero-text">
 
-                <p class="tiny-label">
-                    welcome to my little world ✦
-                </p>
+                    <p class="tiny-label">
+                        welcome to my little world ✦
+                    </p>
 
-                <h1>
-                    hi, i'm <span>Reham</span> ♡
-                </h1>
+                    <h1>
+                        hi, i'm <span>Reham</span> ♡
+                    </h1>
 
-                <p class="hero-description">
-                    a nursing student, creative soul, and someone who
-                    enjoys turning little ideas into something beautiful.
-                </p>
+                    <p class="hero-description">
+                        a nursing student, creative soul, and someone who
+                        enjoys turning little ideas into something beautiful.
+                    </p>
 
-                <div class="hero-buttons">
+                    <div class="hero-buttons">
 
-                    <button
-                        class="primary-button"
-                        onclick="openPopup('aboutPopup')">
-                        get to know me ♡
-                    </button>
+                        <button
+                            class="primary-button"
+                            onclick="openPopup('aboutPopup')"
+                        >
+                            get to know me ♡
+                        </button>
 
-                    <button
-                        class="secondary-button"
-                        onclick="openPopup('albumPopup')">
-                        see my album ✦
-                    </button>
+                        <button
+                            class="secondary-button"
+                            onclick="openPopup('albumPopup')"
+                        >
+                            see my album ✦
+                        </button>
+
+                    </div>
 
                 </div>
 
-            </div>
+
+                <div class="hero-card">
+
+                    <div class="profile-photo">
+
+                        <img
+                            src="images/profile.jpg"
+                            alt="Reham's profile photo"
+                        >
+
+                    </div>
+
+                    <div class="profile-info">
+
+                        <p class="profile-small">
+                            currently
+                        </p>
+
+                        <h3>creating & learning</h3>
+
+                        <p>
+                            somewhere between nursing,
+                            creativity, music, and life.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
 
 
-            <div class="hero-card tilt-card">
+            <!-- =========================
+                 INTERACTIVE MENU
+            ========================== -->
 
-                <div class="profile-photo">
+            <section class="menu-section">
 
-                    <img
-                        src="images/profile.jpg"
-                        alt="Reham's profile photo"
+                <div class="section-heading">
+
+                    <p>explore</p>
+
+                    <h2>
+                        little pieces of me
+                    </h2>
+
+                </div>
+
+
+                <div class="menu-grid">
+
+                    <button
+                        class="menu-card strawberry-card"
+                        onclick="openPopup('aboutPopup')"
                     >
 
-                    <div class="photo-shine"></div>
+                        <span class="card-icon">♡</span>
+
+                        <div>
+                            <h3>about me</h3>
+                            <p>get to know me</p>
+                        </div>
+
+                        <span class="arrow">↗</span>
+
+                    </button>
+
+
+                    <button
+                        class="menu-card matcha-card"
+                        onclick="openPopup('hobbiesPopup')"
+                    >
+
+                        <span class="card-icon">✿</span>
+
+                        <div>
+                            <h3>hobbies</h3>
+                            <p>things i enjoy</p>
+                        </div>
+
+                        <span class="arrow">↗</span>
+
+                    </button>
+
+
+                    <button
+                        class="menu-card cream-card"
+                        onclick="openPopup('favoritesPopup')"
+                    >
+
+                        <span class="card-icon">♡</span>
+
+                        <div>
+                            <h3>favorites</h3>
+                            <p>things i love</p>
+                        </div>
+
+                        <span class="arrow">↗</span>
+
+                    </button>
+
+
+                    <button
+                        class="menu-card strawberry-card"
+                        onclick="openPopup('skillsPopup')"
+                    >
+
+                        <span class="card-icon">✦</span>
+
+                        <div>
+                            <h3>skills</h3>
+                            <p>things i can do</p>
+                        </div>
+
+                        <span class="arrow">↗</span>
+
+                    </button>
+
+
+                    <button
+                        class="menu-card matcha-card"
+                        onclick="openPopup('albumPopup')"
+                    >
+
+                        <span class="card-icon">▣</span>
+
+                        <div>
+                            <h3>album</h3>
+                            <p>little memories</p>
+                        </div>
+
+                        <span class="arrow">↗</span>
+
+                    </button>
+
+
+                    <button
+                        class="menu-card cream-card"
+                        onclick="openPopup('testimonialsPopup')"
+                    >
+
+                        <span class="card-icon">♡</span>
+
+                        <div>
+                            <h3>testimonials</h3>
+                            <p>what my friends say</p>
+                        </div>
+
+                        <span class="arrow">↗</span>
+
+                    </button>
 
                 </div>
 
-                <div class="profile-info">
+            </section>
 
-                    <p class="profile-small">
-                        currently
+
+            <!-- =========================
+                 LITTLE NOTE
+            ========================== -->
+
+            <section class="little-note">
+
+                <div class="note-decoration">🍓</div>
+
+                <div>
+                    <p class="note-label">
+                        a little reminder
                     </p>
 
-                    <h3>creating & learning</h3>
+                    <h2>
+                        "make room for the little things
+                        that make you happy."
+                    </h2>
+                </div>
 
-                    <p>
-                        somewhere between nursing,
-                        creativity, music, and life.
-                    </p>
+                <span class="note-star">✦</span>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             MUSIC PLAYER
+        ========================== -->
+
+        <div class="music-player">
+
+            <div class="music-info">
+
+                <div class="music-cover">
+                    ♫
+                </div>
+
+                <div class="music-details">
+
+                    <span class="music-label">
+                        now playing
+                    </span>
+
+                    <strong>sofia</strong>
+
+                    <small>clairo</small>
 
                 </div>
 
-                <div class="card-sparkle sparkle-one">✦</div>
-                <div class="card-sparkle sparkle-two">♡</div>
-
             </div>
 
-        </section>
 
+            <div class="music-controls">
 
-        <!-- =========================
-             INTERACTIVE MENU
-        ========================== -->
-
-        <section class="menu-section">
-
-            <div class="section-heading">
-
-                <p>explore</p>
-
-                <h2>
-                    little pieces of me
-                </h2>
+                <button
+                    class="music-button"
+                    id="playButton"
+                    onclick="toggleMusic()"
+                    aria-label="Play or pause music"
+                >
+                    ▶
+                </button>
 
             </div>
 
 
-            <div class="menu-grid">
+            <div class="music-progress-area">
 
-                <button
-                    class="menu-card strawberry-card"
-                    onclick="openPopup('aboutPopup')">
+                <span id="currentTime">
+                    0:00
+                </span>
 
-                    <span class="card-icon">♡</span>
+                <input
+                    type="range"
+                    id="progressBar"
+                    value="0"
+                    min="0"
+                    max="100"
+                    aria-label="Music progress"
+                >
 
-                    <div>
-                        <h3>about me</h3>
-                        <p>get to know me</p>
-                    </div>
-
-                    <span class="arrow">↗</span>
-
-                    <span class="card-shine"></span>
-
-                </button>
-
-
-                <button
-                    class="menu-card matcha-card"
-                    onclick="openPopup('hobbiesPopup')">
-
-                    <span class="card-icon">✿</span>
-
-                    <div>
-                        <h3>hobbies</h3>
-                        <p>things i enjoy</p>
-                    </div>
-
-                    <span class="arrow">↗</span>
-
-                    <span class="card-shine"></span>
-
-                </button>
-
-
-                <button
-                    class="menu-card cream-card"
-                    onclick="openPopup('favoritesPopup')">
-
-                    <span class="card-icon">♡</span>
-
-                    <div>
-                        <h3>favorites</h3>
-                        <p>things i love</p>
-                    </div>
-
-                    <span class="arrow">↗</span>
-
-                    <span class="card-shine"></span>
-
-                </button>
-
-
-                <button
-                    class="menu-card strawberry-card"
-                    onclick="openPopup('skillsPopup')">
-
-                    <span class="card-icon">✦</span>
-
-                    <div>
-                        <h3>skills</h3>
-                        <p>things i can do</p>
-                    </div>
-
-                    <span class="arrow">↗</span>
-
-                    <span class="card-shine"></span>
-
-                </button>
-
-
-                <button
-                    class="menu-card matcha-card"
-                    onclick="openPopup('albumPopup')">
-
-                    <span class="card-icon">▣</span>
-
-                    <div>
-                        <h3>album</h3>
-                        <p>little memories</p>
-                    </div>
-
-                    <span class="arrow">↗</span>
-
-                    <span class="card-shine"></span>
-
-                </button>
-
-
-                <button
-                    class="menu-card cream-card"
-                    onclick="openPopup('testimonialsPopup')">
-
-                    <span class="card-icon">♡</span>
-
-                    <div>
-                        <h3>testimonials</h3>
-                        <p>what my friends say</p>
-                    </div>
-
-                    <span class="arrow">↗</span>
-
-                    <span class="card-shine"></span>
-
-                </button>
+                <span id="duration">
+                    0:00
+                </span>
 
             </div>
 
-        </section>
+            <audio id="music" preload="metadata">
+                <source
+                    src="audio/sofia.mp3"
+                    type="audio/mpeg"
+                >
+            </audio>
+
+        </div>
 
 
-        <!-- =========================
-             LITTLE NOTE
-        ========================== -->
-
-        <section class="little-note">
-
-            <div class="note-decoration">🍓</div>
-
-            <div>
-
-                <p class="note-label">
-                    a little reminder
-                </p>
-
-                <h2>
-                    "make room for the little things
-                    that make you happy."
-                </h2>
-
-            </div>
-
-            <span class="note-star">✦</span>
-
-        </section>
-
-    </main>
+    </div>
 
 
     <!-- =========================
@@ -334,19 +392,24 @@
             <div class="popup-header drag-handle">
 
                 <div class="window-title">
+
                     <span class="window-dot pink"></span>
                     <span class="window-dot green"></span>
                     <span class="window-dot cream"></span>
+
                     <span>about me ♡</span>
+
                 </div>
 
                 <button
                     class="close-button"
-                    onclick="closePopup('aboutPopup')">
+                    onclick="closePopup('aboutPopup')"
+                >
                     ×
                 </button>
 
             </div>
+
 
             <div class="popup-content about-content">
 
@@ -408,19 +471,24 @@
             <div class="popup-header drag-handle">
 
                 <div class="window-title">
+
                     <span class="window-dot pink"></span>
                     <span class="window-dot green"></span>
                     <span class="window-dot cream"></span>
+
                     <span>hobbies ✿</span>
+
                 </div>
 
                 <button
                     class="close-button"
-                    onclick="closePopup('hobbiesPopup')">
+                    onclick="closePopup('hobbiesPopup')"
+                >
                     ×
                 </button>
 
             </div>
+
 
             <div class="popup-content">
 
@@ -431,6 +499,7 @@
                 <h2>
                     my favorite ways to spend time
                 </h2>
+
 
                 <div class="hobby-grid">
 
@@ -508,19 +577,24 @@
             <div class="popup-header drag-handle">
 
                 <div class="window-title">
+
                     <span class="window-dot pink"></span>
                     <span class="window-dot green"></span>
                     <span class="window-dot cream"></span>
+
                     <span>favorites ♡</span>
+
                 </div>
 
                 <button
                     class="close-button"
-                    onclick="closePopup('favoritesPopup')">
+                    onclick="closePopup('favoritesPopup')"
+                >
                     ×
                 </button>
 
             </div>
+
 
             <div class="popup-content">
 
@@ -532,6 +606,7 @@
                     my current favorites
                 </h2>
 
+
                 <div class="favorite-list">
 
                     <div class="favorite-item">
@@ -539,8 +614,8 @@
                         <div>
                             <h3>music</h3>
                             <p>
-                                clairo, laufey, and songs that
-                                feel like a warm hug.
+                                clairo, laufey, and songs
+                                that feel like a warm hug.
                             </p>
                         </div>
                     </div>
@@ -572,8 +647,8 @@
                         <div>
                             <h3>food</h3>
                             <p>
-                                good food shared with people
-                                i love.
+                                good food shared with
+                                people i love.
                             </p>
                         </div>
                     </div>
@@ -609,19 +684,24 @@
             <div class="popup-header drag-handle">
 
                 <div class="window-title">
+
                     <span class="window-dot pink"></span>
                     <span class="window-dot green"></span>
                     <span class="window-dot cream"></span>
+
                     <span>skills ✦</span>
+
                 </div>
 
                 <button
                     class="close-button"
-                    onclick="closePopup('skillsPopup')">
+                    onclick="closePopup('skillsPopup')"
+                >
                     ×
                 </button>
 
             </div>
+
 
             <div class="popup-content">
 
@@ -633,64 +713,88 @@
                     my little skill set
                 </h2>
 
+
                 <div class="skill">
+
                     <div class="skill-heading">
                         <span>graphic & layout design</span>
                         <span>90%</span>
                     </div>
+
                     <div class="skill-bar">
                         <div style="width: 90%;"></div>
                     </div>
+
                 </div>
 
+
                 <div class="skill">
+
                     <div class="skill-heading">
                         <span>digital illustration</span>
                         <span>85%</span>
                     </div>
+
                     <div class="skill-bar">
                         <div style="width: 85%;"></div>
                     </div>
+
                 </div>
 
+
                 <div class="skill">
+
                     <div class="skill-heading">
                         <span>presentation design</span>
                         <span>90%</span>
                     </div>
+
                     <div class="skill-bar">
                         <div style="width: 90%;"></div>
                     </div>
+
                 </div>
 
+
                 <div class="skill">
+
                     <div class="skill-heading">
                         <span>communication</span>
                         <span>90%</span>
                     </div>
+
                     <div class="skill-bar">
                         <div style="width: 90%;"></div>
                     </div>
+
                 </div>
 
+
                 <div class="skill">
+
                     <div class="skill-heading">
                         <span>research & organization</span>
                         <span>85%</span>
                     </div>
+
                     <div class="skill-bar">
                         <div style="width: 85%;"></div>
                     </div>
+
                 </div>
 
+
                 <div class="skill">
+
                     <div class="skill-heading">
                         <span>health education materials</span>
                         <span>80%</span>
                     </div>
+
                     <div class="skill-bar">
                         <div style="width: 80%;"></div>
                     </div>
+
                 </div>
 
             </div>
@@ -711,19 +815,24 @@
             <div class="popup-header drag-handle">
 
                 <div class="window-title">
+
                     <span class="window-dot pink"></span>
                     <span class="window-dot green"></span>
                     <span class="window-dot cream"></span>
+
                     <span>my album ▣</span>
+
                 </div>
 
                 <button
                     class="close-button"
-                    onclick="closePopup('albumPopup')">
+                    onclick="closePopup('albumPopup')"
+                >
                     ×
                 </button>
 
             </div>
+
 
             <div class="popup-content">
 
@@ -734,6 +843,7 @@
                 <h2>
                     memories ♡
                 </h2>
+
 
                 <div class="album-grid">
 
@@ -787,19 +897,24 @@
             <div class="popup-header drag-handle">
 
                 <div class="window-title">
+
                     <span class="window-dot pink"></span>
                     <span class="window-dot green"></span>
                     <span class="window-dot cream"></span>
+
                     <span>testimonials ♡</span>
+
                 </div>
 
                 <button
                     class="close-button"
-                    onclick="closePopup('testimonialsPopup')">
+                    onclick="closePopup('testimonialsPopup')"
+                >
                     ×
                 </button>
 
             </div>
+
 
             <div class="popup-content">
 
@@ -810,6 +925,7 @@
                 <h2>
                     sweet words ♡
                 </h2>
+
 
                 <div class="testimonial-grid">
 
@@ -829,6 +945,7 @@
 
                     </div>
 
+
                     <div class="testimonial-card">
 
                         <div class="quote-mark">
@@ -844,6 +961,7 @@
                         <span>— brilliant</span>
 
                     </div>
+
 
                     <div class="testimonial-card">
 
@@ -869,357 +987,244 @@
 
     </div>
 
+
     <!-- =========================
-         MUSIC PLAYER
-         NOW AT THE ACTUAL BOTTOM
+         JAVASCRIPT
     ========================== -->
 
-    <div class="music-player">
+    <script>
 
-        <div class="music-info">
+        /* =========================================
+           POPUPS
+        ========================================= */
 
-            <div class="music-cover">
-                ♫
-            </div>
+        function openPopup(popupID) {
 
-            <div class="music-details">
+            const popup = document.getElementById(popupID);
 
-                <span class="music-label">
-                    now playing
-                </span>
+            if (!popup) return;
 
-                <strong>sofia</strong>
+            popup.classList.add("active");
 
-                <small>clairo</small>
+            document.body.classList.add("no-scroll");
 
-            </div>
+            const windowElement =
+                popup.querySelector(".draggable-window");
 
-        </div>
+            if (windowElement) {
 
+                windowElement.classList.remove("dragging");
 
-        <div class="music-controls">
+                windowElement.style.left = "";
+                windowElement.style.top = "";
+                windowElement.style.position = "";
+                windowElement.style.margin = "";
 
-            <button
-                class="music-button"
-                id="playButton"
-                onclick="toggleMusic()">
-                ▶
-            </button>
+            }
 
-        </div>
+        }
 
 
-        <div class="music-progress-area">
+        function closePopup(popupID) {
 
-            <span id="currentTime">
-                0:00
-            </span>
+            const popup = document.getElementById(popupID);
 
-            <input
-                type="range"
-                id="progressBar"
-                value="0"
-                min="0"
-                max="100"
-            >
+            if (!popup) return;
 
-            <span id="duration">
-                0:00
-            </span>
+            popup.classList.remove("active");
 
-        </div>
+            document.body.classList.remove("no-scroll");
+
+        }
 
 
-        <audio id="music" preload="metadata">
-            <source src="audio/sofia.mp3" type="audio/mpeg">
-        </audio>
-
-    </div>
-
-</div>
-
-
-<!-- =========================
-     JAVASCRIPT
-========================== -->
-
-<script>
-
-    /* =========================
-       POPUPS
-    ========================== */
-
-    function openPopup(popupID) {
-
-        const popup = document.getElementById(popupID);
-
-        popup.classList.add("active");
-
-        document.body.classList.add("no-scroll");
-
-    }
-
-
-    function closePopup(popupID) {
-
-        const popup = document.getElementById(popupID);
-
-        popup.classList.remove("active");
-
-        document.body.classList.remove("no-scroll");
-
-    }
-
-
-    function goHome() {
-
-        document
-            .querySelectorAll(".popup-overlay")
-            .forEach(function(popup) {
-                popup.classList.remove("active");
-            });
-
-        document.body.classList.remove("no-scroll");
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-
-    }
-
-
-    /* =========================
-       CLOSE OUTSIDE POPUP
-    ========================== */
-
-    document
-        .querySelectorAll(".popup-overlay")
-        .forEach(function(overlay) {
-
-            overlay.addEventListener("click", function(event) {
-
-                if (event.target === overlay) {
-
-                    overlay.classList.remove("active");
-
-                    document.body.classList.remove("no-scroll");
-
-                }
-
-            });
-
-        });
-
-
-    /* =========================
-       ESC CLOSE
-    ========================== */
-
-    document.addEventListener("keydown", function(event) {
-
-        if (event.key === "Escape") {
+        function closeAllPopups() {
 
             document
                 .querySelectorAll(".popup-overlay")
                 .forEach(function(popup) {
+
                     popup.classList.remove("active");
+
                 });
 
             document.body.classList.remove("no-scroll");
 
         }
 
-    });
+
+        function goHome() {
+
+            closeAllPopups();
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
 
 
-    /* =========================
-       DRAGGABLE WINDOWS
-    ========================== */
+        /* =========================================
+           CLICK OUTSIDE POPUP
+        ========================================= */
 
-    let activeWindow = null;
-    let offsetX = 0;
-    let offsetY = 0;
+        document
+            .querySelectorAll(".popup-overlay")
+            .forEach(function(overlay) {
 
-    document
-        .querySelectorAll(".drag-handle")
-        .forEach(function(handle) {
+                overlay.addEventListener("click", function(event) {
 
-            handle.addEventListener("mousedown", function(event) {
+                    if (event.target === overlay) {
 
-                if (event.target.closest(".close-button")) {
-                    return;
-                }
+                        closePopup(overlay.id);
 
-                activeWindow =
-                    handle.closest(".draggable-window");
+                    }
 
-                const rect =
-                    activeWindow.getBoundingClientRect();
-
-                offsetX =
-                    event.clientX - rect.left;
-
-                offsetY =
-                    event.clientY - rect.top;
-
-                activeWindow.classList.add("dragging");
-
-                activeWindow.style.position = "fixed";
-
-                activeWindow.style.left =
-                    rect.left + "px";
-
-                activeWindow.style.top =
-                    rect.top + "px";
-
-                activeWindow.style.margin = "0";
-
-                document.body.classList.add("is-dragging");
+                });
 
             });
 
-        });
 
+        /* =========================================
+           ESCAPE KEY
+        ========================================= */
 
-    document.addEventListener("mousemove", function(event) {
+        document.addEventListener("keydown", function(event) {
 
-        if (!activeWindow) {
-            return;
-        }
+            if (event.key === "Escape") {
 
-        let newLeft =
-            event.clientX - offsetX;
+                closeAllPopups();
 
-        let newTop =
-            event.clientY - offsetY;
-
-        const maxLeft =
-            window.innerWidth -
-            activeWindow.offsetWidth;
-
-        const maxTop =
-            window.innerHeight -
-            activeWindow.offsetHeight;
-
-        newLeft =
-            Math.max(
-                10,
-                Math.min(newLeft, maxLeft - 10)
-            );
-
-        newTop =
-            Math.max(
-                10,
-                Math.min(newTop, maxTop - 10)
-            );
-
-        activeWindow.style.left =
-            newLeft + "px";
-
-        activeWindow.style.top =
-            newTop + "px";
-
-    });
-
-
-    document.addEventListener("mouseup", function() {
-
-        if (activeWindow) {
-
-            activeWindow.classList.remove("dragging");
-
-        }
-
-        activeWindow = null;
-
-        document.body.classList.remove("is-dragging");
-
-    });
-
-
-    /* =========================
-       TOUCH DRAGGING
-    ========================== */
-
-    document
-        .querySelectorAll(".drag-handle")
-        .forEach(function(handle) {
-
-            handle.addEventListener(
-                "touchstart",
-                function(event) {
-
-                    activeWindow =
-                        handle.closest(".draggable-window");
-
-                    const touch =
-                        event.touches[0];
-
-                    const rect =
-                        activeWindow.getBoundingClientRect();
-
-                    offsetX =
-                        touch.clientX - rect.left;
-
-                    offsetY =
-                        touch.clientY - rect.top;
-
-                    activeWindow.classList.add("dragging");
-
-                    activeWindow.style.position = "fixed";
-
-                    activeWindow.style.left =
-                        rect.left + "px";
-
-                    activeWindow.style.top =
-                        rect.top + "px";
-
-                    activeWindow.style.margin = "0";
-
-                },
-                { passive: true }
-            );
+            }
 
         });
 
 
-    document.addEventListener(
-        "touchmove",
-        function(event) {
+        /* =========================================
+           DRAGGABLE POPUP WINDOWS
+        ========================================= */
 
-            if (!activeWindow) {
+        let activeWindow = null;
+
+        let offsetX = 0;
+        let offsetY = 0;
+
+
+        document
+            .querySelectorAll(".drag-handle")
+            .forEach(function(handle) {
+
+                handle.addEventListener(
+                    "pointerdown",
+                    startDragging
+                );
+
+            });
+
+
+        function startDragging(event) {
+
+            if (event.target.closest(".close-button")) {
                 return;
             }
 
-            const touch =
-                event.touches[0];
+            const windowElement =
+                this.closest(".draggable-window");
+
+            if (!windowElement) return;
+
+
+            activeWindow = windowElement;
+
+            const rect =
+                activeWindow.getBoundingClientRect();
+
+
+            offsetX =
+                event.clientX - rect.left;
+
+            offsetY =
+                event.clientY - rect.top;
+
+
+            /*
+             * Convert the centered popup into a fixed
+             * positioned element before dragging.
+             */
+
+            activeWindow.style.position = "fixed";
+
+            activeWindow.style.left =
+                rect.left + "px";
+
+            activeWindow.style.top =
+                rect.top + "px";
+
+            activeWindow.style.margin = "0";
+
+            activeWindow.style.transform =
+                "none";
+
+
+            activeWindow.classList.add("dragging");
+
+
+            this.setPointerCapture(event.pointerId);
+
+
+            event.preventDefault();
+
+        }
+
+
+        document.addEventListener(
+            "pointermove",
+            dragWindow
+        );
+
+
+        function dragWindow(event) {
+
+            if (!activeWindow) return;
+
 
             let newLeft =
-                touch.clientX - offsetX;
+                event.clientX - offsetX;
 
             let newTop =
-                touch.clientY - offsetY;
+                event.clientY - offsetY;
+
 
             const maxLeft =
                 window.innerWidth -
                 activeWindow.offsetWidth;
 
+
             const maxTop =
                 window.innerHeight -
                 activeWindow.offsetHeight;
 
+
             newLeft =
                 Math.max(
                     10,
-                    Math.min(newLeft, maxLeft - 10)
+                    Math.min(
+                        newLeft,
+                        Math.max(10, maxLeft - 10)
+                    )
                 );
+
 
             newTop =
                 Math.max(
                     10,
-                    Math.min(newTop, maxTop - 10)
+                    Math.min(
+                        newTop,
+                        Math.max(10, maxTop - 10)
+                    )
                 );
+
 
             activeWindow.style.left =
                 newLeft + "px";
@@ -1227,396 +1232,239 @@
             activeWindow.style.top =
                 newTop + "px";
 
-        },
-        { passive: true }
-    );
+        }
 
 
-    document.addEventListener("touchend", function() {
+        document.addEventListener(
+            "pointerup",
+            stopDragging
+        );
 
-        if (activeWindow) {
+
+        document.addEventListener(
+            "pointercancel",
+            stopDragging
+        );
+
+
+        function stopDragging() {
+
+            if (!activeWindow) return;
+
             activeWindow.classList.remove("dragging");
+
+            activeWindow = null;
+
         }
 
-        activeWindow = null;
 
-    });
+        /* =========================================
+           MUSIC PLAYER
+        ========================================= */
 
+        const music =
+            document.getElementById("music");
 
-    /* =========================
-       CUSTOM CURSOR
-    ========================== */
+        const playButton =
+            document.getElementById("playButton");
 
-    const cursorDot =
-        document.querySelector(".cursor-dot");
+        const progressBar =
+            document.getElementById("progressBar");
 
-    const cursorRing =
-        document.querySelector(".cursor-ring");
+        const currentTime =
+            document.getElementById("currentTime");
 
-    const cursorGlow =
-        document.querySelector(".cursor-glow");
-
-    let mouseX = window.innerWidth / 2;
-    let mouseY = window.innerHeight / 2;
-
-    let ringX = mouseX;
-    let ringY = mouseY;
-
-    document.addEventListener("mousemove", function(event) {
-
-        mouseX = event.clientX;
-        mouseY = event.clientY;
-
-        cursorDot.style.left =
-            mouseX + "px";
-
-        cursorDot.style.top =
-            mouseY + "px";
-
-        cursorGlow.style.left =
-            mouseX + "px";
-
-        cursorGlow.style.top =
-            mouseY + "px";
-
-    });
+        const duration =
+            document.getElementById("duration");
 
 
-    function animateCursor() {
+        function toggleMusic() {
 
-        ringX +=
-            (mouseX - ringX) * 0.15;
+            if (music.paused) {
 
-        ringY +=
-            (mouseY - ringY) * 0.15;
+                music.play().catch(function(error) {
 
-        cursorRing.style.left =
-            ringX + "px";
+                    console.log(
+                        "Music could not play:",
+                        error
+                    );
 
-        cursorRing.style.top =
-            ringY + "px";
+                });
 
-        requestAnimationFrame(animateCursor);
+            } else {
 
-    }
+                music.pause();
 
-    animateCursor();
+            }
+
+        }
 
 
-    /* =========================
-       CURSOR HOVER STATES
-    ========================== */
+        music.addEventListener(
+            "play",
+            function() {
 
-    const hoverElements =
-        document.querySelectorAll(
-            "button, a, input, .album-photo, .hobby-item, .favorite-item, .testimonial-card"
+                playButton.textContent = "Ⅱ";
+
+                document
+                    .querySelector(".music-player")
+                    .classList.add("playing");
+
+            }
         );
 
-    hoverElements.forEach(function(element) {
 
-        element.addEventListener("mouseenter", function() {
+        music.addEventListener(
+            "pause",
+            function() {
 
-            document.body.classList.add("cursor-hover");
+                playButton.textContent = "▶";
 
-        });
+                document
+                    .querySelector(".music-player")
+                    .classList.remove("playing");
 
-        element.addEventListener("mouseleave", function() {
-
-            document.body.classList.remove("cursor-hover");
-
-        });
-
-    });
-
-
-    /* =========================
-       MOUSE TRAIL PARTICLES
-    ========================== */
-
-    const trailContainer =
-        document.querySelector(".mouse-trail-container");
-
-    let lastTrailTime = 0;
-
-    document.addEventListener("mousemove", function(event) {
-
-        const now = Date.now();
-
-        if (now - lastTrailTime < 45) {
-            return;
-        }
-
-        lastTrailTime = now;
-
-        const trail =
-            document.createElement("span");
-
-        trail.className = "mouse-trail";
-
-        const symbols = [
-            "♡",
-            "✦",
-            "✿",
-            "·"
-        ];
-
-        trail.textContent =
-            symbols[
-                Math.floor(
-                    Math.random() * symbols.length
-                )
-            ];
-
-        trail.style.left =
-            event.clientX + "px";
-
-        trail.style.top =
-            event.clientY + "px";
-
-        trailContainer.appendChild(trail);
-
-        setTimeout(function() {
-            trail.remove();
-        }, 700);
-
-    });
-
-
-    /* =========================
-       MAGNETIC BUTTON EFFECT
-    ========================== */
-
-    document
-        .querySelectorAll(
-            ".primary-button, .secondary-button, .menu-heart, .music-button"
-        )
-        .forEach(function(button) {
-
-            button.addEventListener("mousemove", function(event) {
-
-                const rect =
-                    button.getBoundingClientRect();
-
-                const x =
-                    event.clientX - rect.left - rect.width / 2;
-
-                const y =
-                    event.clientY - rect.top - rect.height / 2;
-
-                button.style.transform =
-                    `translate(${x * 0.08}px, ${y * 0.08}px) scale(1.03)`;
-
-            });
-
-            button.addEventListener("mouseleave", function() {
-
-                button.style.transform = "";
-
-            });
-
-        });
-
-
-    /* =========================
-       HERO CARD MOUSE TILT
-    ========================== */
-
-    const heroCard =
-        document.querySelector(".tilt-card");
-
-    heroCard.addEventListener("mousemove", function(event) {
-
-        const rect =
-            heroCard.getBoundingClientRect();
-
-        const x =
-            event.clientX - rect.left;
-
-        const y =
-            event.clientY - rect.top;
-
-        const rotateY =
-            ((x / rect.width) - 0.5) * 8;
-
-        const rotateX =
-            ((y / rect.height) - 0.5) * -8;
-
-        heroCard.style.transform =
-            `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
-
-    });
-
-
-    heroCard.addEventListener("mouseleave", function() {
-
-        heroCard.style.transform =
-            "";
-
-    });
-
-
-    /* =========================
-       MUSIC PLAYER
-    ========================== */
-
-    const music =
-        document.getElementById("music");
-
-    const playButton =
-        document.getElementById("playButton");
-
-    const progressBar =
-        document.getElementById("progressBar");
-
-    const currentTime =
-        document.getElementById("currentTime");
-
-    const duration =
-        document.getElementById("duration");
-
-
-    function toggleMusic() {
-
-        if (music.paused) {
-
-            music.play();
-
-        } else {
-
-            music.pause();
-
-        }
-
-    }
-
-
-    music.addEventListener("play", function() {
-
-        playButton.textContent = "Ⅱ";
-
-        document
-            .querySelector(".music-player")
-            .classList.add("playing");
-
-    });
-
-
-    music.addEventListener("pause", function() {
-
-        playButton.textContent = "▶";
-
-        document
-            .querySelector(".music-player")
-            .classList.remove("playing");
-
-    });
-
-
-    music.addEventListener("loadedmetadata", function() {
-
-        duration.textContent =
-            formatTime(music.duration);
-
-    });
-
-
-    music.addEventListener("timeupdate", function() {
-
-        if (!music.duration) {
-            return;
-        }
-
-        const percentage =
-            (music.currentTime / music.duration) * 100;
-
-        progressBar.value =
-            percentage;
-
-        currentTime.textContent =
-            formatTime(music.currentTime);
-
-    });
-
-
-    progressBar.addEventListener("input", function() {
-
-        if (!music.duration) {
-            return;
-        }
-
-        music.currentTime =
-            (progressBar.value / 100) *
-            music.duration;
-
-    });
-
-
-    music.addEventListener("ended", function() {
-
-        playButton.textContent = "▶";
-
-        progressBar.value = 0;
-
-        currentTime.textContent =
-            "0:00";
-
-    });
-
-
-    function formatTime(seconds) {
-
-        if (isNaN(seconds)) {
-            return "0:00";
-        }
-
-        const minutes =
-            Math.floor(seconds / 60);
-
-        const remainingSeconds =
-            Math.floor(seconds % 60);
-
-        return (
-            minutes +
-            ":" +
-            remainingSeconds
-                .toString()
-                .padStart(2, "0")
+            }
         );
 
-    }
+
+        music.addEventListener(
+            "loadedmetadata",
+            function() {
+
+                duration.textContent =
+                    formatTime(music.duration);
+
+            }
+        );
 
 
-    /* =========================
-       FLOATING DECORATION PARALLAX
-    ========================== */
+        music.addEventListener(
+            "timeupdate",
+            function() {
 
-    document.addEventListener("mousemove", function(event) {
+                if (!music.duration) return;
 
-        const x =
-            (event.clientX / window.innerWidth - 0.5);
 
-        const y =
-            (event.clientY / window.innerHeight - 0.5);
+                const percentage =
+                    (music.currentTime /
+                    music.duration) * 100;
+
+
+                progressBar.value =
+                    percentage;
+
+
+                currentTime.textContent =
+                    formatTime(
+                        music.currentTime
+                    );
+
+            }
+        );
+
+
+        progressBar.addEventListener(
+            "input",
+            function() {
+
+                if (!music.duration) return;
+
+
+                music.currentTime =
+                    (progressBar.value / 100) *
+                    music.duration;
+
+            }
+        );
+
+
+        music.addEventListener(
+            "ended",
+            function() {
+
+                playButton.textContent = "▶";
+
+                progressBar.value = 0;
+
+                currentTime.textContent = "0:00";
+
+                document
+                    .querySelector(".music-player")
+                    .classList.remove("playing");
+
+            }
+        );
+
+
+        function formatTime(seconds) {
+
+            if (isNaN(seconds)) {
+                return "0:00";
+            }
+
+
+            const minutes =
+                Math.floor(seconds / 60);
+
+
+            const remainingSeconds =
+                Math.floor(seconds % 60);
+
+
+            return (
+                minutes +
+                ":" +
+                remainingSeconds
+                    .toString()
+                    .padStart(2, "0")
+            );
+
+        }
+
+
+        /* =========================================
+           CARD HOVER MICRO-INTERACTION
+        ========================================= */
 
         document
-            .querySelectorAll(".floating")
-            .forEach(function(element, index) {
+            .querySelectorAll(".menu-card")
+            .forEach(function(card) {
 
-                const strength =
-                    (index + 1) * 7;
+                card.addEventListener(
+                    "mouseenter",
+                    function() {
 
-                element.style.marginLeft =
-                    `${x * strength}px`;
+                        const arrow =
+                            this.querySelector(".arrow");
 
-                element.style.marginTop =
-                    `${y * strength}px`;
+                        if (arrow) {
+                            arrow.style.transform =
+                                "translate(3px, -3px)";
+                        }
+
+                    }
+                );
+
+
+                card.addEventListener(
+                    "mouseleave",
+                    function() {
+
+                        const arrow =
+                            this.querySelector(".arrow");
+
+                        if (arrow) {
+                            arrow.style.transform =
+                                "";
+                        }
+
+                    }
+                );
 
             });
 
-    });
-
-</script>
-```
+    </script>
 
 </body>
 </html>
